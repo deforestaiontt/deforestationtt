@@ -28,6 +28,67 @@
 	width: 30% !important;
 }
 
+@font-face {
+    font-family: newzald;  
+    src: url(https://treetimeapp.com/wp-content/uploads/2020/08/NewzaldTest-BlackItalic.otf);  
+    font-weight: normal;  
+}
+
+@font-face {
+    font-family: newzaldblack;  
+    src: url(https://treetimeapp.com/wp-content/uploads/2020/09/NewzaldTest-Black.otf);  
+    font-weight: normal;  
+}
+
+@font-face {
+    font-family: newzaldmedium;  
+    src: url(https://treetimeapp.com/wp-content/uploads/2020/09/NewzaldTest-Medium.otf);  
+    font-weight: normal;  
+}
+
+@font-face {
+    font-family: newzaldbold;  
+    src: url(https://treetimeapp.com/wp-content/uploads/2020/09/NewzaldTest-Bold.otf);  
+    font-weight: normal;  
+}
+
+a{
+font-family: newzald !important;
+}
+
+p {
+font-family: newzaldmedium !important;
+}
+
+h3 {
+font-family: newzald !important;
+}
+
+h4 {
+font-family: newzald !important;
+}
+
+h5 {
+font-family: newzald !important;
+}
+
+h6 {
+font-family: newzaldbold !important;
+}
+
+h2 {
+font-family: newzald !important;
+}
+
+h1 {
+font-family: newzald !important;
+}
+
+
+
+
+
+
 
 /*.logo-circle{
 	height: 26px;
@@ -1064,13 +1125,6 @@
 
 
 /*ABOUT PAGE*/
-
-
-
-.about P {
-	font-size: 18px;
-	font-family: 'Montserrat', sans-serif !important;
-}
 
 .heading-title {
 	margin-top: 50px;
