@@ -29,12 +29,41 @@
 </head>
 <body>
 
+   <!-- Load Facebook SDK for JavaScript -->
+   <div id="fb-root"></div>
+   <script>
+     window.fbAsyncInit = function() {
+       FB.init({
+         xfbml            : true,
+         version          : 'v10.0'
+       });
+     };
+
+     (function(d, s, id) {
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) return;
+     js = d.createElement(s); js.id = id;
+     js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));</script>
+
+   <!-- Your Chat Plugin code -->
+   <div class="fb-customerchat"
+     attribution="setup_tool"
+     page_id="117154930125252"
+theme_color="#67b868"
+logged_in_greeting="Hi! How can we help today?"
+logged_out_greeting="Hi! How can we help today?">
+   </div>
+
   <!-- Preloader Start  -->
    <div class="preloader">
       <div class="loader">
       </div>
    </div>
   <!-- Preloader End  -->
+
+  
 
  
  <!-- Header Section Start -->
@@ -379,7 +408,7 @@
             <div class="col-lg-7">
                  <!-- Section Title Start -->
                 <div class="section-title">
-                    <h1 class="title">Testimonials</h1>
+                    <h1 class="title">Testimonials</h1><br>
                     <h2 class="subtitle">Our World Saviours</h2>
                 </div>
                 <!-- Section Title End -->
@@ -393,7 +422,7 @@
                     <div class="testi-comment">
                        <p>
                        <i class="fas fa-quote-left"></i> 
-                       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                       This is a great app for everyone who loves our planet & nature 🌱🌳🌲 and wants to help fight the climate crisis...
                        <i class="fas fa-quote-right"></i> 
                        </p>
                        <ul class="stars list-unstyled">
@@ -405,9 +434,9 @@
                        </ul>
                     </div>
                     <div class="client-info">
-                       <img src="img/testimonial/treetime_ashleigh.jpg" alt="testimonial">
-                       <h5>Ashleigh Darroch</h5>
-                       <p>Twinning</p>
+                       <img src="img/testimonial/treetime_marcus.jpg" alt="testimonial">
+                       <h5>Markus S</h5>
+                       <p>March 1, 2021</p>
                     </div>
                 </div>
             </div>
@@ -418,7 +447,7 @@
                     <div class="testi-comment">
                        <p>
                        <i class="fas fa-quote-left"></i> 
-                       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                       Easy app to navigate, looking forward to seeing my trees grow 😊
                        <i class="fas fa-quote-right"></i> 
                        </p>
                        <ul class="stars list-unstyled">
@@ -430,9 +459,9 @@
                        </ul>
                     </div>
                     <div class="client-info">
-                       <img src="img/testimonial/treetime_nick.jpg" alt="testimonial">
-                       <h5>Nick Muir</h5>
-                       <p>Pitbull Lover</p>
+                       <img src="img/testimonial/treetime_michelle.jpg" alt="testimonial">
+                       <h5>Michelle Barnes</h5>
+                       <p>February 18, 2021</p>
                     </div>
                 </div>
             </div>
@@ -475,7 +504,7 @@
            <div class="col-lg-7">
               <!-- Section Title Start -->
                <div class="section-title">
-                   <h1 class="title">Video Explainer</h1>
+                   <h1 class="title">Video Explainer</h1><br>
                    <h2 class="subtitle">Here's a run down <br>of how it all works..</h2>
                </div>
                <!-- Section Title End -->
