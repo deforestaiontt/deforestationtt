@@ -18,7 +18,8 @@
  	margin:0;
  	padding:0;
  	outline: none;
-	 list-style: none;
+	list-style: none;
+	box-sizing: border-box;
  }
  a{
  	text-decoration: none!important;
@@ -63,33 +64,112 @@ font-family: newzaldmedium !important;
 
 h3 {
 font-family: newzald !important;
+color: #00a24e;
 }
 
 h4 {
 font-family: newzald !important;
+color: #00a24e;
 }
 
 h5 {
 font-family: newzald !important;
+color: #00a24e;
 }
 
 h6 {
 font-family: newzaldbold !important;
+color: #00a24e;
 }
 
 h2 {
 font-family: newzald !important;
+color: #00a24e !important;
 }
 
 h1 {
 font-family: newzald !important;
+color: #00a24e;
+}
+
+.lboard_wrap .lboard_mem ,.name_bar p {
+	font-family: newzald !important;
 }
 
 
+.team-wrapper{
+	margin-top: 50px;
+  }
+  
+  .team-wrapper h1{
+	font-family: 'Allura', cursive;
+	font-size: 52px;
+	margin-bottom: 60px;
+	text-align: center;
+  }
+  
+  .team{
+	display: flex;
+	justify-content: center;
+	width: auto;
+	text-align: center;
+	flex-wrap: wrap;
+  }
+  
+  .team .team_member{
+	background: #fff;
+	margin: 5px;
+	margin-bottom: 50px;
+	width: 300px;
+	padding: 20px;
+	line-height: 20px;
+	color: #8e8b8b;  
+	position: relative;
+  }
+  
+  .team .team_member h3{
+	color: #727272;
+	font-size: 26px;
+	margin-top: 50px;
+  }
+  
+  .team .team_member p.role{
+	color: #ccc;
+	margin: 12px 0;
+	font-size: 12px;
+	text-transform: uppercase;
+  }
+  
+  .team .team_member .team_img{
+	position: absolute;
+	top: -50px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 150px;
+	height: 100px;
+	border-radius: 50% !important;
+	background: #fff;
+  }
+  
+  .team .team_member .team_img img{
+	width: 100px;
+	height: 100px;
+	padding: 5px;
+	border-radius: 50% !important;
+  }
 
+  .team-members {
+	  padding-top: 5px;
+	  padding-bottom: 50px;
+  }
 
+  .team-members .subtitle {
+	  padding-bottom: 20px;
+  }
 
-
+  .team-members .mybtn1 {
+	  width: 370px;
+  }
 
 /*.logo-circle{
 	height: 26px;
@@ -301,9 +381,23 @@ font-family: newzald !important;
 	background-image: url("../img/shape-bg.png");
 	background-size: cover;
 	background-position: bottom;
+	z-index: -1;
+}
+
+.footer::before{
+	content: '';
+	position:absolute;
+	left:0;
+	right:0;
+	bottom:300px;
+	height: 112px;
+	background-image: url("../img/shape-bg.png");
+	background-size: cover;
+	background-position: bottom;
 	background-repeat: no-repeat;
 	z-index: -1;
 }
+
 .home-section .home-content h1{
    font-size: 55px;
    color:#ffffff;
@@ -1196,125 +1290,6 @@ font-family: newzald !important;
     text-transform: uppercase;
 	margin-top: 100px;
 }
-.team-member, .team-member .team-img {
-    position: relative;
-}
-
-.team-title,
-.team-member {
-    overflow: hidden;
-	margin-left: 20%;
-}
-
-@media (max-width: 1000px) {
-
-.team-title h5{
-	width: 200px;
-	margin-right: 30% !important;
-}
-
-.team-title,
-.team-member {
-	margin-left: 0%;
-	padding: 0 0 !important;
-}
-}
-
-.team-member, .team-member .team-img {
-    position: relative;
-	max-height: 300px;
-	border-radius: 40px;
-}
-
-.team-member, .team-member .team-img img {
-	max-width: 300px;
-}
-
-.team-hover {
-    position: absolute;
-	border-radius: 40px;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin: 0;
-    border: 20px solid rgba(0, 0, 0, 0.1);
-    background-color: rgba(255, 255, 255, 0.90);
-    opacity: 0;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
-}
-.team-member:hover .team-hover .desk {
-    top: 50%;
-}
-.team-member:hover .team-hover, .team-member:hover .team-hover .desk, .team-member:hover .team-hover .s-link {
-    opacity: 1;
-}
-.team-hover .desk {
-    position: absolute;
-    top: 0%;
-    width: 100%;
-    opacity: 0;
-    -webkit-transform: translateY(-55%);
-    -ms-transform: translateY(-55%);
-    transform: translateY(-55%);
-    -webkit-transition: all 0.3s 0.2s;
-    transition: all 0.3s 0.2s;
-    padding: 0 20px;
-}
-.desk, .desk h4, .team-hover .s-link a {
-    text-align: center;
-    color: #222;
-}
-.team-member:hover .team-hover .s-link {
-    bottom: 10%;
-}
-.team-member:hover .team-hover, .team-member:hover .team-hover .desk, .team-member:hover .team-hover .s-link {
-    opacity: 1;
-}
-.team-hover .s-link {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    opacity: 0;
-    text-align: center;
-    -webkit-transform: translateY(45%);
-    -ms-transform: translateY(45%);
-    transform: translateY(45%);
-    -webkit-transition: all 0.3s 0.2s;
-    transition: all 0.3s 0.2s;
-    font-size: 35px;
-}
-.desk, .desk h4, .team-hover .s-link a {
-    text-align: center;
-    color: #222;
-}
-.team-member .s-link a {
-    margin: 0 10px;
-    color: #333;
-    font-size: 16px;
-}
-.team-title {
-	margin: 0px !important;
-	margin-left: 100px !important;
-	overflow: hidden;
-    position: static;
-    padding: 15px 0;
-    display: inline-block;
-    letter-spacing: 2px;
-    width: 100%;
-}
-.team-title h5 {
-    margin-bottom: 0px;
-    display: block;
-    text-transform: uppercase;
-}
-.team-title span {
-    font-size: 12px;
-    text-transform: uppercase;
-    color: #a5a5a5;
-    letter-spacing: 1px;
-}
 
 /*FAQ*/
 
@@ -1334,16 +1309,6 @@ font-family: newzald !important;
   display: inline-block;
   font-weight: 600;
   line-height: 1;
-}
-.faq-title h2::before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    width: 60px;
-    height: 2px;
-    background: #00a24e;
-    bottom: -25px;
-    margin-left: -30px;
 }
 
 .faq-title h5 {
