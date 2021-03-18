@@ -64,7 +64,7 @@ font-family: newzaldmedium !important;
 
 h3 {
 font-family: newzald !important;
-color: #00a24e;
+color: #41ad76 !important;
 }
 
 h4 {
@@ -90,6 +90,11 @@ color: #00a24e !important;
 h1 {
 font-family: newzald !important;
 color: #00a24e;
+}
+
+.newsletter-section h2,
+.testimonial-section h2{
+	color: #FFFFFF !important;
 }
 
 .lboard_wrap .lboard_mem ,.name_bar p {
@@ -145,12 +150,12 @@ color: #00a24e;
 	top: -50px;
 	left: 50%;
 	transform: translateX(-50%);
-	width: 150px;
+	width: 100px;
 	height: 100px;
 	border-radius: 50% !important;
 	background: #fff;
   }
-  
+
   .team .team_member .team_img img{
 	width: 100px;
 	height: 100px;
@@ -369,7 +374,8 @@ color: #00a24e;
 	position: relative;
 	z-index: 1;
 	overflow: hidden;
-	background-image: url("../img/home_header_back_opt2.jpg");
+	background-size: cover;
+	background-image: url("../img/treetime_landing_bg.jpg");
 }
 .home-section::before{
 	content: '';
@@ -817,7 +823,7 @@ color: #00a24e;
 .features-section .features-item:hover .icon i,
 .features-section .features-item:hover h3,
 .features-section .features-item:hover p{
-	color: #ffffff;
+	color: #ffffff !important;
 }
 
 
@@ -1187,6 +1193,34 @@ color: #00a24e;
 	color:#555555;
 	margin:0;
 }
+
+/*Brands Starts*/
+
+.brands {
+	text-align: center;
+	margin-top: 100px;
+}
+.brands img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	cursor: pointer;
+}
+.brands img.transformative{
+    height: 6vh;
+	margin-bottom: 50px; 
+}
+
+@media (max-width: 600px) {
+	.brands img.qualit {
+		height: 12vh;
+	}
+	.brands img.transformative{
+		height: 5vh;
+	}
+}
+
+/*Brands End*/
 
 /* Footer Section */
 .footer{
