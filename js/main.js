@@ -1,11 +1,36 @@
 
 
-  // Preloader
-  $(window).on('load',function(){
-  	 setTimeout(function(){
-  	 	$(".preloader").fadeOut('slow');
-  	 },600);
-  });
+// Preloader
+$(window).on('load',function(){
+    setTimeout(function(){
+    $(".preloader").fadeOut('slow');
+    },600);
+});
+
+//Navbar Transparent
+if (window.location.pathname == '/index.html') {
+    if ($(window).scrollTop() == 0) {
+        $(window).on('load', function(){
+            $('.header').css('background','transparent');
+            $('.header').css('opacity','0');
+        });
+    }
+    $(window).scroll(function () {
+        if ($(window).scrollTop() >= 50) {
+            $('.header').css('background','#3E9E57');
+            $('.header').css('opacity','1');
+        } else {
+            $('.header').css('background','transparent');
+            $('.header').css('opacity','0');
+        }
+    });
+}
+
+
+
+
+
+
  
   $(document).ready(function(){
 
