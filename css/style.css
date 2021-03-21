@@ -338,7 +338,7 @@ color: #00a24e;
  } 
 
 .navbar-brand img {
-	max-width: 300px;
+	max-width: 90px;
 	width: 50%;
 	padding: 0;
 	margin: 0;
@@ -346,7 +346,6 @@ color: #00a24e;
 
 .header .navbar button {
 	color: #00a24e !important;
-	text-align: center;
 	margin: 0 auto;
 }
 
