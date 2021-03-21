@@ -26,12 +26,6 @@ if (window.location.pathname == '/index.html') {
     });
 }
 
-
-
-
-
-
- 
   $(document).ready(function(){
 
     if ($(document).scrollTop() > 100) {
