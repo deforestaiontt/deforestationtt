@@ -324,6 +324,7 @@ color: #00a24e;
 }
  /* Header Section */
  .header{
+	 background-color: #5a9b5e !important;
 	 transition: 1s;
 	 box-shadow: 0 6px 2px -2px rgba(0,0,0,.2);
 
@@ -337,16 +338,29 @@ color: #00a24e;
  	text-transform: uppercase;
  } 
 
-.navbar-brand img {
-	max-width: 90px;
+/*BRAND IMAGE START*/
+
+.footer .navbar-brand img,
+.navbar .navbar-brand img {
 	width: 50%;
 	padding: 0;
 	margin: 0;
 }
 
+.footer .navbar-brand img {
+	max-width: 300px;
+}
+
+.navbar .navbar-brand img {
+	max-width: 90px;
+}
+
+/*BRAND IMAGE END*/
+
+
 .header .navbar button {
 	color: #00a24e !important;
-	margin: 0 auto;
+	margin-right: 0 !important;
 }
 
  .header .navbar #collapsibleNavbar .nav-item .nav-link{

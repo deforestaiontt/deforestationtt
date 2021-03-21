@@ -17,7 +17,7 @@ if (window.location.pathname == '/index.html') {
     }
     $(window).scroll(function () {
         if ($(window).scrollTop() >= 50) {
-            $('.header').css('background','#3E9E57');
+            $('.header').css('background','#5a9b5e');
             $('.header').css('opacity','1');
         } else {
             $('.header').css('background','transparent');
