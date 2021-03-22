@@ -2055,31 +2055,7 @@ select.form-control[multiple] {
 .treetime_map {
 	border: 0;
 	width: 0 auto;
-	padding: 20px;
-	width: 500px;
-	border-radius: 50px;
-}
-
-@media (max-width: 1200px) {
-	.treetime_map{
-		width: 400px;
-	}
-}
-
-@media (max-width: 1000px) {
-	.treetime_map{
-		width: 300px;
-	}
-}
-
-@media (max-width: 780px) {
-	.treetime_map{
-		width: 500px;
-	}
-}
-
-@media (max-width: 550px) {
-	.treetime_map{
-		width: 300px;
-	}
+	padding-bottom: 30px;
+	width: 100%;
+	border-radius: 20px;
 }
