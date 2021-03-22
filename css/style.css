@@ -394,13 +394,13 @@ color: #00a24e;
 
 /* Home Section */
 .home-section{
-	padding: 250px 0 200px;
+	padding: 250px 0 250px;
 	position: relative;
 	z-index: 1;
 	overflow: hidden;
 	background-size: cover;
 	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8)  0%, transparent 100%),
-					  url("../img/treetime_landing_bg.jpg");
+					  url("../img/treetime_landing.jpeg");
 }
 .home-section::before{
 	content: '';
@@ -1081,9 +1081,19 @@ color: #00a24e;
 }
 
  /*Faq Section*/
+.faq-start {
+	margin-top: 100px;
+}
+
 .faq-section{
    padding:80px 0 80px;
+   margin-bottom: 0px !important;
 }
+
+.faq-section .section-title {
+	margin-bottom: 0 !important;
+}
+
 .faq-section .faq-item{
 	margin-bottom: 40px;
 }
