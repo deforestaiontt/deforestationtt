@@ -11,16 +11,13 @@ $(window).on('load',function(){
 if (window.location.pathname == '/index.html'){
     if ($(window).scrollTop() == 0) {
         $(window).on('load', function(){
-            $('.header').css('background','transparent');
             $('.header').css('opacity','0');
         });
     }
     $(window).scroll(function () {
         if ($(window).scrollTop() >= 1000) {
-            $('.header').css('background','#3E9E57');
             $('.header').css('opacity','1');
         } else {
-            $('.header').css('background','transparent');
             $('.header').css('opacity','0');
         }
     });
