@@ -7,21 +7,21 @@ $(window).on('load',function(){
     },600);
 });
 
-//Navbar Transparent
 if (window.location.pathname == '/index.html'){
-    if ($(window).scrollTop() == 0) {
-        $(window).on('load', function(){
-            $('.header').css('opacity','0');
-        });
-    }
-    $(window).scroll(function () {
-        if ($(window).scrollTop() >= 1000) {
-            $('.header').css('opacity','1');
-        } else {
-            $('.header').css('opacity','0');
+    $(window).on("scroll", function() {
+        if($(window).scrollTop()) {
+              $('.header').addClass('transparent');
         }
-    });
+        else {
+              $('.header').removeClass('transparent');
+        }
+    })
+}else {
+    $('.header').addClass('transparent');
 }
+
+
+
 
   $(document).ready(function(){
 
