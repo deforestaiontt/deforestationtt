@@ -99,6 +99,53 @@ font-family: newzald !important;
 color: #00a24e;
 }
 
+.footer,
+.mybtn2,
+.navbar-toggler,
+.newsletter-section::before,
+.testimonial-section .owl-carousel .owl-nav button.owl-next:hover, 
+.testimonial-section .owl-carousel .owl-nav button.owl-prev:hover,
+.testimonial-section::before,
+.products-section .owl-carousel .owl-nav button.owl-next, 
+.products-section .owl-carousel .owl-nav button.owl-prev,
+.features-section .features-item:hover,
+.section-title .title::before,
+.home-section,
+.header{
+	background-color: #52A869 !important;
+}
+
+.footer .footer-social-links a:hover i,
+.contact-section .contact-item h5,
+.contact-section .contact-item .icon i,
+.faq-section .support-text a,
+.testimonial-section .owl-carousel .owl-nav button.owl-next, 
+.testimonial-section .owl-carousel .owl-nav button.owl-prev,
+.testimonial-section .client-info h5,
+.products-section .product-content .product-price .new-price,
+.features-section .features-item .icon i,
+.about-section .about-content ul li i,
+.section-title .title,
+.mybtn1:hover,
+.mybtn1{
+	color:#52A869;
+}
+
+.contact-section .contact-form .form-control:focus,
+.testimonial-section .client-info img{
+	border-color:#52A869 !important;
+}
+.preloader .loader{
+  border-right: 5px solid #52A869 !important;
+}
+
+@media(max-width: 991px){
+.header .navbar #collapsibleNavbar .nav-item .nav-link{
+  color:#3E9E57;	
+  }
+}
+
+
 .newsletter-section h2,
 .testimonial-section h2{
 	color: #FFFFFF !important;
@@ -798,7 +845,7 @@ color: #00a24e;
    top:0;
 }
 
-.about-section .about-content .fas {
+.about-section .about-content .fa {
 	font-size: 25px;
 }
 
