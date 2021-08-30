@@ -18,14 +18,18 @@ google.setOnLoadCallback(deforestation);
 function deforestation() {
   var data = google.visualization.arrayToDataTable([
     ['Year', 'Tropical', 'Non-Tropical'],
-    ['2004',  1000,      400],
-    ['2005',  1170,      460],
-    ['2006',  660,       1120],
-    ['2007',  1030,      540]
+    ['2001',  6500000,13000000],
+    ['2004',  9000000,20000000],
+    ['2007',  9100000,17000000],
+    ['2010',  10000000,17500000],
+        ['2004',  9100000,21000000],
+    ['2007',  16500000,29900000],
+    ['2010',  13000000,26000000]
   ]);
 
   var options = {
-    hAxis: {title: 'Year'}
+    hAxis: {title: 'Year'},
+     colors: ['#3E9E57','#085E2F'],
  };
 
 var chart = new google.visualization.ColumnChart(document.getElementById('deforestation'));
