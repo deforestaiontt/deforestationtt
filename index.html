@@ -1,1 +1,42 @@
+<html>
+   <head>
+      <style>
+.chart {
+  width: 100%; 
+  height: 100%;
+}
+      </style>
 
+   </head>
+<body>
+   <script src="https://www.google.com/jsapi"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+   <div id="deforestation" class="chart"></div>
+   <script>
+google.load("visualization", "1", {packages:["corechart"]});
+google.setOnLoadCallback(deforestation);
+function deforestation() {
+  var data = google.visualization.arrayToDataTable([
+    ['Year', 'Tropical', 'Non-Tropical'],
+    ['2004',  1000,      400],
+    ['2005',  1170,      460],
+    ['2006',  660,       1120],
+    ['2007',  1030,      540]
+  ]);
+
+  var options = {
+    hAxis: {title: 'Year'}
+ };
+
+var chart = new google.visualization.ColumnChart(document.getElementById('deforestation'));
+  chart.draw(data, options);
+}
+
+$(window).resize(function(){
+ deforestation();
+});
+
+   </script>
+</body>
+
+</html>
